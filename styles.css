@@ -1,84 +1,87 @@
-/* Estilo para a tabela de navegação */
-#navigation {
-  width: 100%;
-  max-width: 1327px;
-  height: auto;
-  padding: 0 64px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
+/* Fundo de toda a página */
+body {
+  background-color: #f5edf1;
 }
 
-/* Estilo para o contêiner do logotipo */
+/* Estilo para a barra de navegação */
+#navigation {
+  display: flex;
+}
+
+/* Estilo para o logotipo */
 #logo {
-  margin: 48px 32px 0 32px;
+  margin: 16px 46px;
+}
+
+/* Mantém a proporção da imagem do logotipo */
+#logo img {
+  width: 284px;
+  height: auto;
+}
+
+/* Estilo para o item "Home" */
+#home-box {
+  background-color: #f5edf1;
+  width: 62px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home {
+  font-weight: bold;
+  font-size: 14px;
+  color: #042552;
+  transition: color 0.3s ease;
+}
+
+#home:hover {
+  color: #229cff;
+}
+
+/* Rotação da seta do "Home" */
+#home-box:hover > #home > .arrow {
+  transform: rotate(180deg);
 }
 
 /* Estilo para o menu */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+#menu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* Estilo para o texto do menu */
-ul li {
-  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px; /* Tamanho da fonte ajustado para 14px */
-  font-weight: bold;
-  color: #154B78;
-  margin-left: 45px;
-  cursor: pointer;
-  position: relative;
-}
-
-/* Estilo para os sublinks */
-.hs-menu-children-wrapper {
-  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  height: 285px;
+  width: 248px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px 0px;
-  width: 230px; /* Largura ajustada para 230px */
-  height: 267px; /* Altura ajustada para 267px */
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
 }
 
-/* Mostrar sublinks quando o mouse passar sobre */
-ul li:hover .hs-menu-children-wrapper {
+/* Estilo para os itens do menu */
+#menu ul li {
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  color: #042552;
+  font-weight: bold;
+  flex-grow: 1;
   display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilo para os sublinks individuais */
-.hs-menu-children-wrapper a {
-  padding: 8px;
-  color: #154B78;
-  text-decoration: none;
+#menu ul li:hover {
+  background-color: #f8f8f8;
+  color: #229cff;
 }
 
-/* Mudar a cor do sublink quando o mouse passar sobre */
-.hs-menu-children-wrapper a:hover {
-  background-color: #58afff; /* Fundo do botão alterado */
-  color: white;
+/* Estilo para as setas do submenu */
+.arrow-left {
+  margin-left: 53px;
+  margin-right: 50px;
 }
 
-/* Adicionar setas antes dos sublinks */
-.hs-menu-children-wrapper a:before {
-  content: ">";
-  margin-right: 8px;
-}
-
-/* Adicionar seta para baixo no menu principal */
-ul li:before {
-  content: "▼";
-  margin-right: 8px;
+.hidden {
+  display: none;
 }

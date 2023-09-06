@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Blog Example</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Tabela de Navegação -->
-  <nav id="navigation">
-    <!-- Logotipo -->
+  <div id="navigation">
     <div id="logo">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcS_iiIBoR9lChkoYFdAZb3HfH22zMpK1gKrviTzD1rXTtpTM2BzK6Y0DaVsjv3ibGIziLDrOitNQIrrJ6YaDSIQQMe0tETTM3fjoY0Fij2MGIbIa8jXzqkSLlMnFdrw15Dzd1z577UhxCXokYq_Y2zmTPzKUXR0CTWm9etHXyIUFhSi1r9wQkdgUpD4Ao/s1600/Logo-Biel-Souza-NEGRITO.png" alt="Logotipo" width="284" height="95">
+      <img src="https://bit.ly/biel-souza-logo" alt="Logotipo">
     </div>
-
-    <!-- Menu principal -->
-    <ul>
-      <li>
-        Home1
-        <div class="hs-menu-children-wrapper">
-          <a href="#">SubHome1</a>
-          <a href="#">SubHome2</a>
-          <a href="#">SubHome3</a>
-          <a href="#">SubHome4</a>
-          <a href="#">SubHome5</a>
-        </div>
-      </li>
-      <!-- Adicione mais itens de menu aqui -->
-    </ul>
-  </nav>
+    <div id="menu-box">
+      <div id="home-box">
+        <span id="home">Home <span class="arrow">&#9660;</span></span>
+      </div>
+      <div id="menu" class="hidden">
+        <ul>
+          <li><span class="arrow-left">&#9654;</span> SubLink 1</li>
+          <li><span class="arrow-left">&#9654;</span> SubLink 2</li>
+          <li><span class="arrow-left">&#9654;</span> SubLink 3</li>
+          <li><span class="arrow-left">&#9654;</span> SubLink 4</li>
+          <li><span class="arrow-left">&#9654;</span> SubLink 5</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
